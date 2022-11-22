@@ -6,7 +6,7 @@ title:  Bitcoin Security for Cosmos and Beyond
 description: Aiman's Intro
 slug: /my-doc-id
 ---
- ![Docusaurus logo](/img/Pena.png)
+
 
 **A bird's eye overview of the project**
 
@@ -49,7 +49,7 @@ Babylon architecture consists of 3 components, with two levels of checkpointing.
 
 The value of this source of trust can be further broken down into two aspects:
 
-- Bitcoin is based on `Proof-of-Work`, while many other current and emerging blockchains are based on Proof-of-Stake. PoS chains as Cosmos zones have certain security limitations compared to PoW chains. A properly designed architecture leveraging Bitcoin can potentially remove these limitations. 
+- Bitcoin is based on `Proof-of-Work`, while many other current and emerging blockchains are based on `Proof-of-Stake`. PoS chains as Cosmos zones have certain security limitations compared to PoW chains. A properly designed architecture leveraging Bitcoin can potentially remove these limitations. 
 
 >In fact, PoS and PoW have complementary strengths, and a properly designed architecture can obtain the best of both worlds.
 
@@ -64,6 +64,30 @@ In Nakamoto’s [whitepaper](https://bitcoin.org/bitcoin.pdf), the Bitcoin block
 
 ![Docusaurus logo](/img/arch.png)
 
+The Babylon architecture is shown above. It consists of three components with two levels of checkpointing:
+
+1. Bitcoin, as the timestamping service.
+2. The Babylon chain, a Cosmos zone, as the middle layer.
+3. Other Cosmos zones, as the consumers of security.
+
+An important design consideration is that Bitcoin has very limited capacity in carrying arbitrary data. In this context, the Babylon chain serves several functions:
+
+1. It aggregates the checkpoint streams of many consumer zones so that only one checkpoint stream needs to be inserted into Bitcoin to simultaneously timestamp events in all the consumer zones.
+2. Its checkpoints into Bitcoin can be made compact using cryptographic techniques such as aggregate signatures.
+3. It receives checkpoints from the consumer zones via Inter Blockchain Communication (IBC).
+4. It checks for the availability of the data behind the checkpoints of the consumer zones so that an attacker cannot timestamp unavailable data.
+
+## Use cases
+
+1. [Fast Stake Unbonding](https://babylonchain.substack.com/p/babylon-for-fast-stake-unbonding): Proof-of-stake chains require social consensus to thwart long range attacks and this leads to [long unbonding periods](https://babylonchain.io/blogs/f/why-is-stake-unbonding-so-slow). In Cosmos, this is typically 21 days. Bitcoin security replaces social consensus and reduces unbonding periods to 5 hours.
+2. [Bootstrapping new zones](https://babylonchain.substack.com/p/shared-security): Bitcoin security can be used to bootstrap new zones which have low token valuation.
+3. Protecting important transactions: Bitcoin security can be used to protect important transactions while normal transactions get fast finality.
+4. [Censorship resistance](https://babylonchain.io/blogs/f/censorship-resistance-via-babylon): Transactions that are censored can use Babylon as a backup to enter the ledger.
+
+## Technology
+The Babylon technology which supports these use cases consists of 1) core primitives for writing timestamps onto Bitcoin by the consumer zones and reading the timestamps on Bitcoin by the consumer zones; 2) protocols that use the timestamp information to realize the various use cases. Both the core primitives and the protocols will be described in the following posts.
 
 
+
+This article is also available on Substack: Babylon: Bitcoin Security for All (substack.com)
 
