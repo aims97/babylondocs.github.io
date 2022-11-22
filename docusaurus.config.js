@@ -6,13 +6,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Babylon',
-  tagline: 'Bringing Bitcoin security to Cosmos and beyond',
+  title: 'BabylonChain',
+  tagline: 'Bringing Bitcoin security to Cosmos and beyond!',
   url: 'https://aims97.github.io',
   baseUrl: '/babylondocs.github.io/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/babylon.jpg',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -62,7 +62,7 @@ const config = {
         title: 'Babylon',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/babylon.png',
+          src: 'img/babylon.jpg',
         },
         items: [
           {
@@ -89,6 +89,10 @@ const config = {
                 label: 'Documentation',
                 to: '/docs/intro',
               },
+              {
+                label: 'Blogs',
+                to: 'https://babylonchain.io/blogs',
+              },
             ],
           },
           {
@@ -102,6 +106,10 @@ const config = {
               {
                 "label": "LinkedIn",
                 "href": "https://www.linkedin.com/company/babylon-chain/"
+              },
+              {
+                "label": "Youtube",
+                "href": "https://www.youtube.com/channel/UCmnied_wAVVa2ECVLQH2OLQ"
               }
             ]
           },
@@ -116,7 +124,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+       
       },
       prism: {
         theme: lightCodeTheme,
