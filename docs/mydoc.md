@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Babylon'
+sidebar_label: 'What is Babylon?'
 sidebar_position: 0
 id: my-doc-id
 title:  Bitcoin Security for Cosmos and Beyond
