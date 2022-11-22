@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Babylon',
   tagline: 'Bringing Bitcoin security to Cosmos and beyond',
-  url: 'https://github.com/aims97',
-  baseUrl: 'https://github.com/aims97/babylon.github.io',
+  url: 'https://aims97.github.io',
+  baseUrl: '/babylondocs.github.io/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -18,6 +18,8 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'aims97', // Usually your GitHub org/user name.
   projectName: 'babylon.github.io', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
+  trailingSlash: false,
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
