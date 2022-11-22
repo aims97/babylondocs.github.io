@@ -17,7 +17,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'aims97', // Usually your GitHub org/user name.
-  projectName: 'babylon.github.io', // Usually your repo name.
+  projectName: 'babylondocs.github.io', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
