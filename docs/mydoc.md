@@ -4,7 +4,7 @@ sidebar_position: 0
 id: my-doc-id
 title:  Bitcoin Security for Cosmos and Beyond
 description: Aiman's Intro
-slug: /aimans-blog
+slug: /my-doc-id
 ---
  ![Docusaurus logo](/img/Pena.png)
 
