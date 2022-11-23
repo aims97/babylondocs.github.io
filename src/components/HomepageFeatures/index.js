@@ -22,7 +22,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Babylon Technology',
+    title: 'Our Technology',
     Svg: require('@site/static/img/Bitcoin.svg').default,
     description: (
       <>
