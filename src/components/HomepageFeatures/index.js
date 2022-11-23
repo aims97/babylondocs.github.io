@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Who are we?',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/team.svg').default,
     description: (
       <>
         Our team consists of consensus protocol researchers from Stanford and experienced layer 1 developers from all over the world.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'What is Babylon?',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/pc.svg').default,
     description: (
       <>
         Babylon is a new Cosmos project whose vision is to leverage the security of Bitcoin for enhancing the security of Cosmos zones and other PoS chains.
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Babylon Technology',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/Bitcoin.svg').default,
     description: (
       <>
         Core primitives for writing onto and reading timestamps on Bitcoin by the consumer zones and protocols that use the timestamp information.
