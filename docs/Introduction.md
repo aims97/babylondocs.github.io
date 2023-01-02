@@ -1,8 +1,8 @@
 ---
-sidebar_label: 'What is Babylon?'
+sidebar_label: 'Introduction'
 sidebar_position: 0
 id: my-doc-id
-title:  Bitcoin Security for Cosmos and Beyond
+title:  Introduction
 description: Aiman's Intro
 slug: /my-doc-id
 ---
