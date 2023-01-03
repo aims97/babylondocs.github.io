@@ -6,18 +6,18 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Babylon Blockchain',
-  tagline: 'Bringing Bitcoin Security to Cosmos & Beyond',
-  url: 'https://babylonchain.github.io',
-  baseUrl: '/',
+  title: 'BabylonChain',
+  tagline: 'Bringing Bitcoin security to Cosmos and beyond!',
+  url: 'https://aims97.github.io',
+  baseUrl: '/babylondocs.github.io/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'https://drive.google.com/uc?export=view&id=1LXiSzeRGG1Ij-YLozx9GcYmpmrOVBzBE',
+  favicon: 'img/babylon.jpg',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'babylonchain', // Usually your GitHub org/user name.
-  projectName: 'babylonchain.github.io', // Usually your repo name.
+  organizationName: 'aims97', // Usually your GitHub org/user name.
+  projectName: 'babylondocs.github.io', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
   // Even if you don't use internalization, you can use this field to set useful
